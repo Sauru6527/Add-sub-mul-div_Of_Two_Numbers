@@ -1,0 +1,52 @@
+#include<stdio.h>
+
+/* DEVELOPER NAME:   	    CREATED ON:	                            DESCRIPTION:                                      GUIDED BY:
+SAURABH SANTOSH AHER         08/09/21          PROGRAM FOR ADDITION,SUBSTRACTION,MULTIPLICATION AND DIVISION         ARUN JADHAV     */
+
+int add(int,int);   
+int sub(int,int);    //declaration
+int div(int,int);
+int mul(int,int);
+int main()
+{ 
+    int a,b,ans1,ans2,ans3,ans4,c=0;
+	printf("ENETR ANY TWO NUMBER \n");
+	scanf("%d%d",&a,&b);
+    ans1=add(a,b);
+    ans2=sub(a,b);
+    ans3=mul(a,b);
+    ans4=div(a,b);
+    printf("ADDITION IS --> %d \n",ans1);
+    printf("SUBSTRACTION IS --> %d \n",ans2);
+    printf("MULTIPLICATION IS --> %d \n",ans3);
+    printf("DIVISION IS --> %d \n",ans4);
+	return 0;
+}
+
+int add(int a,int b)              //defination
+{
+ int c=0;
+ c=a+b;
+ return c;
+}
+
+int sub(int a,int b)               //defination
+{
+	int d;
+	d=a-b;
+	return d;
+}
+
+int div(int a,int b)               //defination
+{
+	int e;
+	e=a/b;
+	return e;
+}
+
+int mul(int a,int b)               //defination
+{
+	int f;
+	f=a*b;
+	return f;
+}
